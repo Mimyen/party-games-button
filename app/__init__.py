@@ -467,7 +467,7 @@ class HostScreen(ctk.CTkFrame):
         def post_history():
             try:
                 response = requests.post("http://127.0.0.1:6969/save_to_history")
-                print(f"App:\tStatus: {response.json().get("message")}")
+                print(f"App:\tStatus: {response.json().get('message')}")
             except Exception as e:
                 print(f"App:\tError saving to history: {e}")
 
